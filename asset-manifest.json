@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/WhetherApp/static/css/main.90f0d8be.css",
+    "main.css": "/WhetherApp/static/css/main.b5ab6ef1.css",
     "main.js": "/WhetherApp/static/js/main.e8a1386e.js",
     "static/js/787.82988b84.chunk.js": "/WhetherApp/static/js/787.82988b84.chunk.js",
     "static/media/back3.jpg": "/WhetherApp/static/media/back3.578abc26103cc4f21454.jpg",
@@ -8,12 +8,12 @@
     "static/media/backgroundWheatherVector.jpg": "/WhetherApp/static/media/backgroundWheatherVector.7c4b4ca3b656a77bc815.jpg",
     "static/media/logo.svg": "/WhetherApp/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/WhetherApp/index.html",
-    "main.90f0d8be.css.map": "/WhetherApp/static/css/main.90f0d8be.css.map",
+    "main.b5ab6ef1.css.map": "/WhetherApp/static/css/main.b5ab6ef1.css.map",
     "main.e8a1386e.js.map": "/WhetherApp/static/js/main.e8a1386e.js.map",
     "787.82988b84.chunk.js.map": "/WhetherApp/static/js/787.82988b84.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90f0d8be.css",
+    "static/css/main.b5ab6ef1.css",
     "static/js/main.e8a1386e.js"
   ]
 }
