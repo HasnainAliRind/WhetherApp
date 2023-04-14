@@ -1,0 +1,631 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.musicNav {
+  background: #fff;
+  height: fit-content;
+  padding: 25px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(24, 24, 24);
+  box-shadow: 0px 0px 13px -2px grey;
+  position: sticky;
+  top: 0;
+
+}
+.musicNav .logo label{
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.musicNav .logo span{
+  color: rgb(11, 180, 144);
+}
+.musicNav .search{
+  width: 25%;
+} 
+.musicNav .search input{
+  padding: 8px 14px;
+  border-radius: 25px;
+  width: 100%;
+}
+.Music_App_Initial{
+  padding: 90px 80px;
+}
+
+.musicNav .icon i{
+  font-size: 30px;
+  color: rgb(30, 31, 30);
+  cursor: pointer;
+  transition: .3s;
+}
+.musicNav .icon i:hover{
+  color: rgb(11, 180, 144);
+}
+
+/* ------------------------------------------------ */
+
+.Music_App_Initial{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* width: 100%; */
+  font-family: 'Montserrat';
+  overflow: hidden;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.Music_App_Initial a {
+  padding: 7px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(11, 180, 144);
+  color: white;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0px 0px 4px 0px rgb(51, 160, 136);
+  transition: .3s;
+  text-decoration: none;
+}
+.Music_App_Initial a:hover{
+  box-shadow: none;
+}
+.Music_App_Initial p{
+  text-align: justify;
+}
+.Music_App_Initial span{
+  color: rgb(11, 180, 144);
+}
+.Music_App_Initial .Image{
+  width: 280%;
+  display: flex;
+  justify-content: flex-start;
+}
+.Image img{
+  width: 100%;
+}
+.songs {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #efefef;
+  padding: 0px 30px;
+  padding-bottom: 30px;
+}
+.card{
+  width: 250px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: #fff;
+  justify-content: space-between;
+}
+.card img{
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 50%;
+}
+.card .playIt{
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  
+}
+.playIt button{
+  background-color: rgb(11, 180, 144);
+  color: white;
+  padding: 10px 12px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: .2s;
+  border-radius: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Montserrat';
+}
+.playIt button:hover{
+  background-color: rgb(51, 160, 136);
+}
+.search_field{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  gap: 5px;
+  background-color: #efefef;
+}
+.search_field input{
+  width: 50%;
+  padding: 10px 12px;
+}
+.search_field input:focus{
+  border: none;
+  outline: 2px solid rgb(11, 180, 144);
+}
+.search_field button{
+  padding: 10px 25px;
+  border: none;
+  background-color: rgb(11, 180, 144);
+  color: white;
+  font-size: 20px;
+  font-family: 'Montserrat';
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.search_field button:hover{
+  background-color: rgb(9, 152, 121);
+}
+.notFoundingMsg{
+  margin: 50px 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notFoundingMsg .icon{
+  background-color: rgb(11, 180, 144);
+  color: white;
+  padding: 35px 35px;
+  border-radius: 50%;
+  width: fit-content;
+  margin: 0 auto;
+}
+.icon i{
+  font-size: 35px;
+}
+.notFoundingMsg span{
+  color: rgb(11, 180, 144);
+}
+
+
+/* -----------------------SideBar---------------- */
+.Sidebar{
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background-color: #ffffff;
+  width: 300px;
+  box-shadow: -3px 0px 8px -2px rgb(113, 113, 113);
+  overflow: hidden;
+  transition: .3s;
+}
+.Sidebar .musicPic{
+  height: 120px;
+  background-color: rgb(11, 180, 144);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 65px;
+ 
+}
+.Sidebar .menus{
+  display: flex;
+  gap: 0px;
+  flex-direction: column;
+  height: 60%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30px 0px;
+}
+.menus li{
+  align-items: center;
+  color: #282c34;
+  width: 100%;
+  font-size: 25px;
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+  gap: 30px;
+  padding: 16px 30px;
+  transition: .3s;
+}
+.menus li:hover{
+  background-color: rgb(11, 180, 144);
+  color: white;
+}
+.menus li:hover a{
+  color: white;
+}
+.menus li i{
+  width: 10%;
+}
+.menus li a{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 30px;
+  text-decoration: none;
+  color: #282c34;
+}
+.closeIcon{
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  background: none;
+  color: white;
+  font-size: 35px;
+}
+.closeIcon i{
+  cursor: pointer;
+}
+.closeIcon i:hover{
+  scale: 1.1;
+}
+
+.MusicInterface{
+  position: fixed;
+  z-index: 5;
+  height: fit-content;
+  padding-bottom: 17px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 15px;
+  box-shadow: 0px 0px 8px -2px rgb(24, 24, 24);
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./back3.jpg) center center/cover;
+}
+.MusicInterface .header{
+  text-align: right;
+  background: rgba(0,0,0,0.3);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.header i{
+  padding: 8px 19px;
+  color: white;
+  border-top-right-radius: 15px;
+  background-color: rgb(214, 30, 30);
+  cursor: pointer;
+}
+.header #close:hover{
+  background-color: rgb(158, 33, 33);
+}
+.header #maxScreen{
+  border-top-right-radius: 0px;
+  background: rgba(0,0,0,0.5);
+}
+.header #maxScreen:hover{
+  background: rgba(0,0,0,0.1);
+}
+.MusicInterface .body{
+  padding: 30px;
+  text-align: center;
+  font-family: 'Montserrat';
+ color: white;
+}
+.body span{
+  color: #29f0c5;
+}
+.controls{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    gap: 18px;
+    padding: 0px 30px;
+    color: white;
+}
+.controls button{
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 20px;
+}
+.controls button a{
+  text-decoration: none;
+  color: white;
+}
+.controls button:hover{
+  scale: 1.1;
+}
+.controls .middle{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 22%;
+  justify-content: center;
+}
+.controls .playBtn{
+  border: 2px solid rgb(11,180,144);
+  color: rgb(11,180,144);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 47px;
+  cursor: pointer;
+
+  border-radius: 50%;
+}
+.controls .volumeBtn{
+  color: white;
+  width: 30%;
+  display: flex;
+  cursor: pointer;
+}
+.playBtn i{
+  font-size: 22px;
+}
+.footer{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.footer .track{
+  display: flex;
+  gap: 12px;
+  width: 82%;
+}
+.track p{
+  color: white;
+  font-family: 'Montserrat';
+}
+.footer .rs-range {
+  /* margin-top: 29px; */
+  width: 600px;
+  -webkit-appearance: none;
+  background: none;
+}
+  .rs-range:focus {
+      outline: none;
+  }
+  .rs-range::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 2px;
+      cursor: pointer;
+      box-shadow: none;
+      background: rgb(11, 180, 144);
+      border-radius: 0px;
+      border: 0px solid #010101;
+  }
+  .rs-range::-moz-range-track {
+      width: 100%;
+      height: 1px;
+      cursor: pointer;
+      box-shadow: none;
+      background: #ffffff;
+      border-radius: 0px;
+      border: 0px solid #010101;
+  }
+  .rs-range::-webkit-slider-thumb {
+      box-shadow: none;
+      border: 0px solid #ffffff;
+      box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+      height: 42px;
+      width: 22px;
+      border-radius: 22px;
+      background: rgb(255, 255, 255);
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -20px;
+  }
+  .rs-range::-moz-range-thumb{
+      box-shadow: none;
+      border: 0px solid #ffffff;
+      box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+      height: 42px;
+      width: 22px;
+      border-radius: 22px;
+      background: rgba(255,255,255,1);
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -20px;
+}
+.rs-range::-moz-focus-outer {
+  border: 0;
+  }
+
+/* Recent played Page */
+.recent-played-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+      height: 87.3vh;
+      gap: 10px;
+}
+.plainCard{
+  padding: 0px 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  background-color: #efefef;
+  width: 80%;
+  height: 111px;
+  align-items: center;   
+  border-radius: 85px;
+}
+.plainCard img{
+  width: 11%;
+  /* height: 100%; */
+  border-radius: 50px;
+}
+.plainCard .name-details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 30%;
+}
+.plainCard .recent-controls {
+  display: flex;
+  width: 10%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recent-controls button{
+  width: fit-content;
+  border-radius: 50%;
+  padding: 13px 18px;
+  background-color: rgb(11, 180, 144);
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 25px;
+  width: auto;
+  box-shadow: -6px 4px 8px -4px rgb(112 112 112);
+  cursor: pointer;
+}
+
+.recent-controls button:hover{
+  box-shadow: none;
+}
+
+
+/* About Page */
+
+
+.AboutPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 41px 80px;
+  font-family: 'rota';
+}
+.AboutPage span{
+  color: rgb(11, 180, 144);
+}
+.AboutPage p{
+  text-align: justify;
+}
+
+
+
+/* Loading Spinner */
+
+.MyspinnerLoader{
+  width: 60%;
+  z-index: 8;
+  /* top: 25%; */
+}
+.MyspinnerLoader img{
+  width: 100%;
+}
+
+.smallSpinner{
+  width: 20%;
+}
+
+
+
+/* Recent_Played_Msg */
+.Recent_Played_Msg{
+  width: 50%;
+  height: 75vh;
+  overflow: hidden;
+  /* background-color: #282c34; */
+}
+.Recent_Played_Msg img{
+
+  width: 100%;
+
+}
+/* ----------------darkModeColors */
+
+.DarkComponents {
+    box-shadow: none;
+    background-color: #282c34;
+    color: white;
+}
+.DarkComponents .icon i{
+  color: white;
+}
+.DarkSongSection{
+  background-color:#202020;
+  color: white;
+}
+.DarkCards {
+  background-color:#282c34;
+  color: white;
+}
+.recent-controls .DarkButton {
+  background-color:#282c34;
+  color: white;
+}
+/* #4a4949; */
+
+.DarkSideBar{
+  background-color: #282c34;
+  box-shadow: -3px 0px 8px -2px rgb(0 0 0);
+}
+.DarkSideBar .musicPic{
+  background-color: rgb(0 141 111);
+}
+.DarkSideBar .menus li{
+  color: white;
+}
+.DarkSideBar .menus li a{
+  color: white;
+}
+
+
+.cardsOne{
+  display: flex;
+  flex-direction: column;
+  background-color: #efefef;
+  margin: 30px auto;
+  gap: 10px;
+  justify-content: center;
+  width: 250px;
+  padding: 10px;
+}
+

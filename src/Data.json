@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Hasnain",
+        "id": 1,
+        "passion": "Web Developer"
+    },
+    {
+        "name": "Mohsin",
+        "id": 2,
+        "passion": "Docter"
+    },
+    {
+        "name": "Arslan",
+        "id": 3,
+        "passion": "Enginner"
+    },
+    {
+        "name": "Harry",
+        "id": 4,
+        "passion": "Python Developer"
+    }
+]
