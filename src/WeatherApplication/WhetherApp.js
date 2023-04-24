@@ -104,33 +104,7 @@ function WhetherApp() {
               </>
             ) : (
               <h2 className='Msg404'> <i className='far fa-frown'></i>City is not Founding.</h2>
-              // <>
-              //     <div className='details'><div className='cityName'><img src={locationGif}/><span>{search}</span></div><span>21 {unitSymbol}</span></div>
-              //     <div className='futher'>
-              //       <div><h3>hpa</h3><p>Pressure</p></div>
-              //       <div><h3>C</h3><p>humidity</p></div>
-              //       <div><h3> %</h3><p>Cloudness</p></div>
-
-              //       <div style={{ display: seaLevel === true ? 'block' : 'none' }}><h3> ? "--" : ` hpa`</h3><p>Sea Level</p></div>
-              //       <div style={{ display: groundLevel === true ? 'block' : 'none' }}><h3>{` hpa`}</h3><p>Ground Level</p></div>
-              //       <div style={{ display: Visibility === true ? 'block' : 'none' }}><h3> km</h3><p>Visibility</p></div>
-              //       <div style={{ display: feelLike === true ? 'block' : 'none' }}><h3>{unitSymbol}</h3><p>Feel like</p></div>
-
-
-              //     </div>
-
-
-              //     <div className='furtherDetails'>
-              //       <div>
-              //         <li>Latitude is <strong>°</strong></li>
-              //         <li>Latitude is <strong>°</strong></li>
-              //       </div>
-              //       <div>
-              //         <li>Minimum temperature is <strong> {unitSymbol}</strong></li>
-              //         <li>Maximum temperature is <strong>{unitSymbol}</strong></li>
-              //       </div>
-              //     </div>
-              //     </>
+             
             )
           }
           {/* <h3>Temperature of {search} </h3> */}
